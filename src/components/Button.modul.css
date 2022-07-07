@@ -1,0 +1,29 @@
+button {
+  margin: 20px auto 0 auto;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  transition: all 0.05s;
+}
+
+.btn_increment {
+  background-color: #d32f2f;
+}
+
+.btn_decrement {
+  background-color: #1976d2;
+}
+
+button:active.btn_increment {
+  background-color: #b71c1c;
+  transform: translate(0px, 1px);
+}
+
+button:active.btn_decrement {
+  background-color: #0d47a1;
+  transform: translate(0px, 1px);
+}
