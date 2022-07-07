@@ -1,10 +1,13 @@
+import {useSelector} from "react-redux";
 import "./TemperatureControlCircle.modul.css";
 
 const TemperatureControlCircle = ({ ...props }) => {
+  const temperature = useSelector((state) => state.temperature.value)
+
   return (
     <div className="circle">
       <div className="circle__center">
-        <span>10 °C</span>
+        <span>{temperature} °C</span>
       </div>
     </div>
   );
